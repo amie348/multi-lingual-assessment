@@ -1,0 +1,19 @@
+{
+  "Home": {
+    "title": "Welcome to our Multilingual Website",
+    "description": "This is the home page in English."
+  },
+  "AIHumanizer": {
+    "title": "AI Text Humanizer",
+    "description": "Convert AI-generated text to human-like text."
+  },
+  "Blogs": {
+    "title": "Our Blog",
+    "article1": "First Article",
+    "article2": "Second Article"
+  },
+  "BlogArticle": {
+    "title": "Article: {slug}",
+    "content": "This is the content of the article in English."
+  }
+}

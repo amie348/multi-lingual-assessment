@@ -1,0 +1,19 @@
+{
+  "Home": {
+    "title": "Bem-vindo ao nosso site multilíngue",
+    "description": "Esta é a página inicial em português."
+  },
+  "AIHumanizer": {
+    "title": "Humanizador de Texto AI",
+    "description": "Converta texto gerado por IA em texto semelhante ao humano."
+  },
+  "Blogs": {
+    "title": "Nosso Blog",
+    "article1": "Primeiro Artigo",
+    "article2": "Segundo Artigo"
+  },
+  "BlogArticle": {
+    "title": "Artigo: {slug}",
+    "content": "Este é o conteúdo do artigo em português."
+  }
+}

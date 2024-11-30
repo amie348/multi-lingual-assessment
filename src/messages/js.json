@@ -1,0 +1,19 @@
+{
+  "Home": {
+    "title": "多言語ウェブサイトへようこそ",
+    "description": "これは日本語のホームページです。"
+  },
+  "AIHumanizer": {
+    "title": "AI テキストヒューマナイザー",
+    "description": "AI生成テキストを人間らしいテキストに変換します。"
+  },
+  "Blogs": {
+    "title": "ブログ",
+    "article1": "最初の記事",
+    "article2": "2番目の記事"
+  },
+  "BlogArticle": {
+    "title": "記事: {slug}",
+    "content": "これは日本語の記事の内容です。"
+  }
+}
