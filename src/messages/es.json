@@ -15,5 +15,8 @@
   "BlogArticle": {
     "title": "Artículo: {slug}",
     "content": "Este es el contenido del artículo en español."
+  },
+  "routes": {
+    "convert-ai-text-to-human": "convertir-texto-de-ia-a-humano"
   }
 }

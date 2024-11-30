@@ -15,5 +15,8 @@
   "BlogArticle": {
     "title": "記事: {slug}",
     "content": "これは日本語の記事の内容です。"
+  },
+  "routes": {
+    "convert-ai-text-to-human": "AIテキストを人間に変換する"
   }
 }

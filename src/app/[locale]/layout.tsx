@@ -1,44 +1,25 @@
-import { Inter } from "next/font/google";
-import { notFound } from "next/navigation";
-import { NextIntlClientProvider } from "next-intl";
+// app/[locale]/layout.tsx
 import { ReactNode } from "react";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
-const inter = Inter({ subsets: ["latin"] });
-
-interface RootLayoutProps {
-  children: ReactNode;
-  params: {
-    locale: string;
-  };
-}
-
-export default async function RootLayout({
+export default async function LocaleLayout({
   children,
   params: { locale },
-}: RootLayoutProps) {
-  let messages;
-  try {
-    messages = (await import(`../../messages/${locale}.json`)).default;
-  } catch (error) {
-    notFound();
-  }
+}: {
+  children: ReactNode;
+  params: { locale: string };
+}) {
+  // Fetch messages for the current locale
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
+      <body>
+        <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>
     </html>
   );
-}
-
-export function generateStaticParams() {
-  return [
-    { locale: "en" },
-    { locale: "es" },
-    { locale: "pt" },
-    { locale: "ja" },
-  ];
 }
